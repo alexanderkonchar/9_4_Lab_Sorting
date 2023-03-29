@@ -251,8 +251,8 @@ shared_ptr<Node<Type> > LinkedList<Type>::getMiddle(shared_ptr<Node<Type> > head
 template<class Type>
 shared_ptr<Node<Type> > LinkedList<Type>::mergeInOrder(shared_ptr<Node<Type> > a, shared_ptr<Node<Type> > b) {
     // Base cases when either list is empty
-    if (!a) return a;
-    if (!b) return b;
+    if (!a) return b;
+    if (!b) return a;
 
     shared_ptr<Node<Type>> head;
 
