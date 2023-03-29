@@ -91,7 +91,7 @@ bool checkCase(string name, bool condition) {
     if (!condition) {
         cout << "Failed: " << name << endl;
     } else {
-        cout << name << ": passed" << endl;
+        cout << name << "passed" << endl;
     }
     return condition;
 }
